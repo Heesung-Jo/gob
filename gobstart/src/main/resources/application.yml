@@ -2,6 +2,7 @@
 # Application YAML #
 # inside ./src/main/resources/application.yml
 #------------------------------------------------------------------------------#
+####
 debug: false
 
 spring:
@@ -11,7 +12,6 @@ spring:
     view:
       prefix: /WEB-INF/view/
       suffix: .jsp
-
 
   
   session:
