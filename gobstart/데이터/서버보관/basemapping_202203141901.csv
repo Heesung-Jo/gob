@@ -1,0 +1,5 @@
+"id","category","name","question","realname","currentgrade","person_charge"
+1,team,인사팀,인사부서의 역할을 하는 팀은 무엇인가요,인사팀,,
+2,document,인사계획서,회사의 인사계획을 할 때 승인받는 문서의 실제 이름은 무엇인가요?,인사계획서인가,,
+3,system,SAP,회계처리를 할 때 사용하는 시스템은 무엇인가요?,SAP,,
+4,document,인사품질서,회사의 인사품질을 할 때 승인받는 문서의 실제 이름은 무엇인가요?,인사품질서인가,,

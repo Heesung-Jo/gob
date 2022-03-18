@@ -1,0 +1,55 @@
+#------------------------------------------------------------------------------#
+# Application YAML #
+# inside ./src/main/resources/application.yml
+#------------------------------------------------------------------------------#
+debug: false
+
+spring:
+  profiles:
+     include: oauth
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+
+
+  
+  session:
+    store-type: jdbc
+    jdbc.initialize-schema: always
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    view-names: thymeleaf/*, error/*
+  ## H2 Servlet setting
+   
+            
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update #none # none #create #update #create-drop  
+
+  main:
+    allow-bean-definition-overriding: true
+
+
+
+# Turn off Security for Actuator:
+management:
+  security:
+    enabled: false
+
+server:
+  jsp-servlet:
+    init-parameters:
+       development: true 
+
+ # tomcat:
+ #    additional-tld-skip-patterns: "*.jar"
+
+
+
+##---------------------------------------------------------------------------##

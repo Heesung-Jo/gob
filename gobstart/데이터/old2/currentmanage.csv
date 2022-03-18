@@ -1,0 +1,15 @@
+﻿id,grade,realturn,viewname,levelmanage_id
+1,0,1,Scoping,1
+2,0,2,basemapping,1
+3,0,3,currentview,7
+4,0,4,explanation,6
+5,1,1,basestructure,6
+6,1,2,currentview,7
+7,1,3,explanation,6
+8,2,1,basequestion,6
+9,2,2,currentview,7
+10,2,3,explanation,6
+11,3,1,gojs_work,6
+12,3,2,gojs9,6
+13,3,3,currentview,7
+14,3,4,explanation,6

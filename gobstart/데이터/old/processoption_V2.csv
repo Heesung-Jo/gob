@@ -1,0 +1,13 @@
+﻿id,processdata_id,result_value,realname,refname,option1,option2,option3,option4,option5,showing,action_before,action_after,risk1,risk2,risk3,num1,num2
+1,1,,팀,,,,,,,select,질문1,기본,,,,,
+2,1,,주기,,매월,분기별,반기별,연별,,select,,기본,연별,,,,
+3,1,,전송매체,,메일,인트라넷,SAP,,,select,질문3,기본,,,,,
+4,1,,승인권자,,전결권자,이사회,운영위원회,,,select,질문2,기본,,,,,
+5,1,,몇일,,,,,,,text,,숫자비교,,,,0,20
+6,4,,담당자,,인사팀장,,,,,select,,,,,,,
+7,4,,인원운용계획,,인원운용계획,사업운용계획,인사계획에 관한 문서,,,selectplus,,,,,,,
+8,4,,담당자2,,각 부서원들,각 부서장들,각 임원들,,,select,,,,,,,
+9,4,,통제,,검증,대사,승인,,,selectplus,,,,,,,
+10,4,,인사계획서,,인사계획서,,,,,select,,,,,,,
+11,4,,팀,,인사팀,,,,,select,,,,,,,
+12,4,,채용종류,,정규채용,수시채용,,,,sentenceplus,,,,,,,

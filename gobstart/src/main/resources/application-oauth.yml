@@ -1,0 +1,23 @@
+#------------------------------------------------------------------------------#
+# Application YAML #
+# inside ./src/main/resources/application.yml
+#------------------------------------------------------------------------------#
+
+debug: false
+
+spring:
+  security:
+    oauth2:
+      client:
+         registration:
+           google:
+            client-id: 391307932848-9tbqepaj2krl2cpi52d0nmk4f8o6efgc.apps.googleusercontent.com
+            client-secret: I_l5qcf7-VXWpg_pwKzgLa4p 
+# Embedded Database
+  datasource:
+    url: jdbc:mariadb://localhost:3306/realcf
+    driverClassName: org.mariadb.jdbc.Driver
+    username: root
+    password: Possible1!
+    continue-on-error: true
+            

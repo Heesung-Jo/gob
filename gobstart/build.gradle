@@ -1,0 +1,49 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.apache.poi:poi:3.17'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+
+	implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    implementation 'org.hibernate.validator:hibernate-validator:6.1.2.Final'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'javax.inject:javax.inject:1'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'javax.servlet:jstl'
+	implementation 'org.apache.tiles:tiles-jsp:3.0.5'
+	implementation 'org.apache.tiles:tiles-servlet:3.0.5'
+	implementation 'org.apache.tiles:tiles-core:3.0.5'
+	implementation 'org.apache.tiles:tiles-api:3.0.5'
+	implementation 'org.apache.tiles:tiles-el:3.0.5'
+	implementation 'org.projectlombok:lombok:1.18.10'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'com.codeborne:phantomjsdriver:1.4.1'
+}
+
+test {
+	useJUnitPlatform()
+}
