@@ -25,7 +25,7 @@ import com.entity.coa_process;
 import com.entity.member;
 import com.entity.roledata;
 import com.entity.teamdata;
-import com.errorprocess.CustomException;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.repository.CoadataRepository;
 import com.repository.MemberRepository;
@@ -153,9 +153,11 @@ public class Scoping {
 		 System.out.println(data);
 	     for(String str : data.keySet()) {
 	    	 
+	    	 /*
 	    	 if(data.get(str).equals("") == true) {
 	    		 throw new CustomException(str + " 값이 입력되지 않았습니다.");
 	    	 }
+	    	 */
 	    	 
 	    	 basemapping base = basemaprepository.findByQuestion(str).get(0);
 	    	 base.setRealname(data.get(str));
@@ -168,11 +170,11 @@ public class Scoping {
 		 System.out.println(data);
 
 		 for(String str : data.keySet()) {
-	    	 
+	    	 /*
 	    	 if(data.get(str).equals("") == true) {
 	    		 throw new CustomException(str + " 값이 입력되지 않았습니다.");
 	    	 }
-	    	 
+	    	 */
 	    	 teamdata team = teamrepository.findByTeamname(str).get(0);
 	    	 
 	    	 String realrole = "";
@@ -199,11 +201,11 @@ public class Scoping {
 		 //basequestion에서 찾을 것
 		 
 		 for(String str : data.keySet()) {
-	    	 
+	        /*	 
 	    	 if(data.get(str).equals("") == true) {
 	    		 throw new CustomException(str + " 값이 입력되지 않았습니다.");
 	    	 }
-	    	 
+	    	 */
 	    	 currentmanageservice.getManagemapping();
 	    	 teamdata team = teamrepository.findByTeamname(str).get(0);
 	    	 String process = team.getProcess();

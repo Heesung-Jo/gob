@@ -32,7 +32,7 @@ import com.entity.roledata;
 import com.entity.uniteddata;
 import com.entity.level0table;
 
-import com.errorprocess.CustomException;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.repository.CoadataRepository;
 import com.repository.MemberRepository;
