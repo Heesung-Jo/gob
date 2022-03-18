@@ -206,6 +206,7 @@ public class Scoping {
 	    		 throw new CustomException(str + " 값이 입력되지 않았습니다.");
 	    	 }
 	    	 */
+			 
 	    	 currentmanageservice.getManagemapping();
 	    	 teamdata team = teamrepository.findByTeamname(str).get(0);
 	    	 String process = team.getProcess();
